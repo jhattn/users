@@ -1,10 +1,10 @@
 import { Client } from 'pg';
 
 const pgClient = new Client({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'tabcorp',
-  password: '12345',
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
   port: parseInt(process.env.DB_PORT ?? '5432', 10)
 });
 

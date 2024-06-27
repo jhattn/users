@@ -1,4 +1,7 @@
 import restify from 'restify';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const createServer = () => {
   const server = restify.createServer({
@@ -14,6 +17,7 @@ const createServer = () => {
 
   server.get('/', (req, res, next) => {
     res.send('Hello, Restify with TypeScript!');
+    console.log('process.env.DB_USER>>>>>', process.env.DB_USER);
     return next();
   });
 
