@@ -1,7 +1,3 @@
-# service-social-bff
-
-Tab corp for social betting
-
 ### Node.js Backend API Development Guide
 
 <!-- https://-->
