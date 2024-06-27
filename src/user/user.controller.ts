@@ -182,11 +182,11 @@ const verifyEmail = async (req: any, res: any, next: any) => {
 const updateProfilePic = async (req: any, res: any, next: any) => {
   const { id } = req.body;
   try {
-    const result = await pgClient.query(
-      'UPDATE users SET is_email_verified = TRUE WHERE id = $1 RETURNING *',
-      [id]
-    );
-    res.send(200, { message: 'Profile updated successfully' });
+    // const result = await pgClient.query(
+    //   'UPDATE users SET is_email_verified = TRUE WHERE id = $1 RETURNING *',
+    //   [id]
+    // );
+    // res.send(200, { message: 'Profile updated successfully' });
     return next();
   } catch (err: any) {
     res.send(500, { error: err.message });
