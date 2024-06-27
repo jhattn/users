@@ -1,0 +1,10 @@
+{
+  "dev": {
+    "driver": "pg",
+    "user": "postgres",
+    "host": "localhost",
+    "database": "tabcorp",
+    "password": "12345",
+    "port": "5432"
+  }
+}
